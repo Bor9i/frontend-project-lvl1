@@ -22,7 +22,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: go to mainfolder
-      run: pwd
+      run: cd /home/runner/work/frontend-project-lvl1/frontend-project-lvl1
       
   eslint-run:
     
