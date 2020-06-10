@@ -21,6 +21,8 @@ jobs:
     steps:
 
     # Runs a single command using the runners shell
-    - name: run eslint
+    - name: go to mainfolder
+      run: cd ../../../
+    - name: run eslint 
       run: make lint
 
