@@ -6,4 +6,5 @@ publish:
 	npm publish --dry-run
 lint:
 	npx eslint .
-.PHONY: install run publish
+
+.PHONY: install run publish lint
