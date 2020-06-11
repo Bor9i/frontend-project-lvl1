@@ -20,9 +20,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
-      
-      env:
-       CI: true
+    - uses: halle/eslint-action@1.0.3  
 
     # Runs a single command using the runners shell
     - name: run-eslint
