@@ -25,4 +25,4 @@ jobs:
     # Runs a single command using the runners shell
     - name: run-eslint
       run: 
-           make lint
+           make inEnv && make lint
