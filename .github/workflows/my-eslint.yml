@@ -19,7 +19,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - uses: eslint/github-action@v6.8.0
+    - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
     - name: run-eslint
