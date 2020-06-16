@@ -6,7 +6,7 @@ const congratulations = 'Congratulations, ';
 const symbol = '!';
 const lastString = congratulations + name + symbol;
 for (let i = 0; i < 3; i += 1) {
-  const number = Math.round(Math.random() * 100) + 1;
+  const number = Math.ceil(Math.random() * 100);
   const num = number % 2;
   console.log('Is this an even number? Answer `yes` or `no`.');
   console.log(number);
