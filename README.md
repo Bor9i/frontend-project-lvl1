@@ -7,5 +7,5 @@ Workflows Badge
 Brain-even
 Install Brain-even 
 Winning game https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN
-<a href="https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN"><img src="https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN.png"/></a>
+<a href="https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN"><img src="https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN.png" width="500"/></a>
 Losering game
