@@ -10,6 +10,6 @@ Install Brain-even
 
 Winning game 
 https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN
-<script src="https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN" id="asciicast-Jy24cZUMUVUfU1xnhaALM4GIN" async></script>
+<script src="https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN.js" id="asciicast-Jy24cZUMUVUfU1xnhaALM4GIN" async></script>
 
 Losering game
