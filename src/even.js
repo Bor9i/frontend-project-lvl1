@@ -11,10 +11,6 @@ for (let i = 0; i < 3; i += 1) {
   console.log('Is this an even number? Answer `yes` or `no`.');
   console.log(number);
   const otvet = readlineSync.question('Enter a response: ');
-  if (otvet !== 'yes' && otvet !== 'no') {
-    console.log('wrong answer ;(');
-    break;
-  }
   if (num === 0 && otvet === 'yes') {
     console.log('Correct!');
     endgame = 1;
@@ -27,6 +23,10 @@ for (let i = 0; i < 3; i += 1) {
     endgame = 1;
   } else if (num !== 0 && otvet === 'yes') {
     console.log('`yes` is wrong answer ;(. Correct answer was `no`');
+    endgame = 0;
+    break;
+  } else {
+    console.log('wrong answer ;(');
     endgame = 0;
     break;
   }
