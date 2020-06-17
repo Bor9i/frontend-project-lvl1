@@ -8,8 +8,9 @@ Brain-even
 
 Install Brain-even 
 
-Winning game 
+Winning game
+<br>
 https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN
-<script src="https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN.js" id="asciicast-Jy24cZUMUVUfU1xnhaALM4GIN" async></script>
-
+<a href="https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN"><img src="https://asciinema.org/a/Jy24cZUMUVUfU1xnhaALM4GIN.png" width="500"/></a>
+<br>
 Losering game
