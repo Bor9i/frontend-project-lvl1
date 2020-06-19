@@ -29,3 +29,8 @@ Losering game
 <br>
 <a href="https://asciinema.org/a/Dupxg3XxNw6CrORlKf6rdAMdQ"><img src="https://asciinema.org/a/Dupxg3XxNw6CrORlKf6rdAMdQ.png" width="500"/></a>
 <br>
+
+Brain-gcd
+<br>
+<a href="https://asciinema.org/a/BsmiPfFCM5wacKjAMQg9dNOpA"><img src="https://asciinema.org/a/BsmiPfFCM5wacKjAMQg9dNOpA.png" width="500"/></a>
+<br>
