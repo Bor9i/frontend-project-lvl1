@@ -1,5 +1,5 @@
 import readlineSync from '../node_modules/readline-sync/lib/readline-sync.js';
-import { answer, strBuilder, strEndGame } from './cli.js';
+import { answer, strBuilder, strEndGame } from '../src/index.js';
 
 let endgame = 1;
 for (let i = 0; i < 3; i += 1) {
