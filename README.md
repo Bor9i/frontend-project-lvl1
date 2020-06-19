@@ -18,3 +18,14 @@ Losering game
 <br>
 <a href="https://asciinema.org/a/DymoKdGX0g8UuFeNlGnQBle7m"><img src="https://asciinema.org/a/DymoKdGX0g8UuFeNlGnQBle7m.png" width="500"/></a>
 <br>
+
+Brain-calc
+
+Winning game
+<br>
+<a href="https://asciinema.org/a/r8F93Yr9djx9pE7wnMXJYrrTN"><img src="https://asciinema.org/a/r8F93Yr9djx9pE7wnMXJYrrTN.png" width="500"/></a>
+<br>
+Losering game
+<br>
+<a href="https://asciinema.org/a/Dupxg3XxNw6CrORlKf6rdAMdQ"><img src="https://asciinema.org/a/Dupxg3XxNw6CrORlKf6rdAMdQ.png" width="500"/></a>
+<br>
