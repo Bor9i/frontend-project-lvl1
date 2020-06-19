@@ -7,7 +7,7 @@ for (let i = 0; i < 3; i += 1) {
   const num = number % 2;
   console.log('Is this an even number? Answer `yes` or `no`.');
   console.log(number);
-  const otvet = readlineSync.question('Enter a response: ');
+  const otvet = readlineSync.question('Your answer: ');
   if (num === 0) {
     answer[0] = 'yes';
     console.log(strBuilder(otvet));
