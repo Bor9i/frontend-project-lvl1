@@ -13,9 +13,9 @@ for (let i = 0; i < 3; i += 1) {
   arr[index] = '..';
   console.log('What number is missing in the progression?');
   console.log(arr.join(' '));
-  const otvet = readlineSync.question('Your answer: ');
-  console.log(strBuilder(otvet));
-  if (answer[0] !== otvet) {
+  const inputText = readlineSync.question('Your answer: ');
+  console.log(strBuilder(inputText));
+  if (answer[0] !== inputText) {
     endgame = 0;
     break;
   }

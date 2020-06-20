@@ -21,9 +21,9 @@ for (let i = 0; i < 3; i += 1) {
   answer[0] = `${result}`;
   console.log('Find the greatest common divisor of given numbers.');
   console.log(`${a} ${b}`);
-  const otvet = readlineSync.question('Your answer: ');
-  console.log(strBuilder(otvet));
-  if (answer[0] !== otvet) {
+  const inputText = readlineSync.question('Your answer: ');
+  console.log(strBuilder(inputText));
+  if (answer[0] !== inputText) {
     endgame = 0;
     break;
   }

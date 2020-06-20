@@ -7,15 +7,15 @@ for (let i = 0; i < 3; i += 1) {
   const num = number % 2;
   console.log('Is this an even number? Answer `yes` or `no`.');
   console.log(number);
-  const otvet = readlineSync.question('Your answer: ');
+  const inputText = readlineSync.question('Your answer: ');
   if (num === 0) {
     answer[0] = 'yes';
-    console.log(strBuilder(otvet));
+    console.log(strBuilder(inputText));
   } else {
     answer[0] = 'no';
-    console.log(strBuilder(otvet));
+    console.log(strBuilder(inputText));
   }
-  if (answer[0] !== otvet) {
+  if (answer[0] !== inputText) {
     endgame = 0;
     break;
   }

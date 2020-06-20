@@ -17,9 +17,9 @@ for (let i = 0; i < 3; i += 1) {
       break;
     }
   }
-  const otvet = readlineSync.question('Your answer: ');
-  console.log(strBuilder(otvet));
-  if (answer[0] !== otvet) {
+  const inputText = readlineSync.question('Your answer: ');
+  console.log(strBuilder(inputText));
+  if (answer[0] !== inputText) {
     endgame = 0;
     break;
   }

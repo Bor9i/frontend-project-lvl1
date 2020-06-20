@@ -18,10 +18,10 @@ for (let i = 0; i < 3; i += 1) {
     result = a - b;
     console.log(`${a} - ${b}`);
   }
-  const otvet = readlineSync.question('Your answer: ');
+  const inputText = readlineSync.question('Your answer: ');
   answer[0] = `${result}`;
-  console.log(strBuilder(otvet));
-  if (answer[0] !== otvet) {
+  console.log(strBuilder(inputText));
+  if (answer[0] !== inputText) {
     endgame = 0;
     break;
   }
