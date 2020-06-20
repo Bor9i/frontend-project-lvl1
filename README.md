@@ -39,3 +39,5 @@ Brain-progression
 <br>
 <a href="https://asciinema.org/a/zuu0eZr1dPBWZ923LcVR1GFEI"><img src="https://asciinema.org/a/zuu0eZr1dPBWZ923LcVR1GFEI.png" width="500"/></a>
 <br>
+
+<iframe src="https://asciinema.org/a/zuu0eZr1dPBWZ923LcVR1GFEI"></iframe>
