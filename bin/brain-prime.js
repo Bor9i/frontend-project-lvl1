@@ -1,3 +1,6 @@
 #!/usr/bin/env node
 
-import '../games/prime.js';
+import { name, gameEngine } from '../src/index.js';
+import primeGame from '../games/prime.js';
+
+console.log(gameEngine(name(), primeGame()));

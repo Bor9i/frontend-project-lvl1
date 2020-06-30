@@ -1,3 +1,6 @@
 #!/usr/bin/env node
 
-import '../games/calc.js';
+import { name, gameEngine } from '../src/index.js';
+import calcGame from '../games/calc.js';
+
+console.log(gameEngine(name(), calcGame()));

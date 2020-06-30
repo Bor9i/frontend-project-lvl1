@@ -1,3 +1,6 @@
 #!/usr/bin/env node
 
-import '../games/even.js';
+import { name, gameEngine } from '../src/index.js';
+import evenGame from '../games/even.js';
+
+console.log(gameEngine(name(), evenGame()));

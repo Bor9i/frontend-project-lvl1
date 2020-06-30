@@ -1,33 +1,23 @@
-import readlineSync from '../node_modules/readline-sync/lib/readline-sync.js';
-import { answer, strBuilder, strEndGame } from '../src/index.js';
-
-let endgame = 1;
-for (let i = 0; i < 3; i += 1) {
-  const a = Math.ceil(Math.random() * 50);
-  const b = Math.ceil(Math.random() * 50);
-  let max = a;
-  let min = b;
-  let result = 1;
-  if (a < b) {
-    max = b;
-    min = a;
-  }
-  for (let j = min; j > 0; j -= 1) {
-    if (max % j === 0 && min % j === 0) {
-      result = j;
-      break;
+const gcdGame = () => {
+  const strQuestion = 'Find the greatest common divisor of given numbers.';
+  const arr = [[[], [], []], [[], [], []], [[], [], []]];
+  for (let i = 0; i < 3; i += 1) {
+    arr[i][0].push(strQuestion);
+    const a = Math.ceil(Math.random() * 50);
+    const b = Math.ceil(Math.random() * 50);
+    const max = a > b ? a : b;
+    const min = a < b ? a : b;
+    let result = 1;
+    for (let j = min; j > 0; j -= 1) {
+      if (max % j === 0 && min % j === 0) {
+        result = j;
+        break;
+      }
     }
+    arr[i][1].push(`${a} ${b}`);
+    arr[i][2].push(`${result}`);
   }
-  answer[0] = `${result}`;
-  console.log('Find the greatest common divisor of given numbers.');
-  console.log(`${a} ${b}`);
-  const inputText = readlineSync.question('Your answer: ');
-  console.log(strBuilder(inputText));
-  if (answer[0] !== inputText) {
-    endgame = 0;
-    break;
-  }
-}
-if (endgame === 1) {
-  console.log(strEndGame);
-}
+  return arr;
+};
+
+export default gcdGame;

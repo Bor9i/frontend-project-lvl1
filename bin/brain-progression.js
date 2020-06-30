@@ -1,3 +1,6 @@
 #!/usr/bin/env node
 
-import '../games/progression.js';
+import { name, gameEngine } from '../src/index.js';
+import progressionGame from '../games/progression.js';
+
+console.log(gameEngine(name(), progressionGame()));
