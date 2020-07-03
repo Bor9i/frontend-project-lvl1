@@ -1,10 +1,14 @@
+import { random, gameEngine } from '../src/index.js';
+
 const gcdGame = () => {
   const strQuestion = 'Find the greatest common divisor of given numbers.';
-  const arr = [[[], [], []], [[], [], []], [[], [], []]];
-  for (let i = 0; i < 3; i += 1) {
-    arr[i][0].push(strQuestion);
-    const a = Math.ceil(Math.random() * 50);
-    const b = Math.ceil(Math.random() * 50);
+  const gameData = [];
+  const gameCounter = 3;
+  for (let i = 0; i < gameCounter; i += 1) {
+    gameData.push([]);
+    gameData[i].push(strQuestion);
+    const a = random(50);
+    const b = random(50);
     const max = a > b ? a : b;
     const min = a < b ? a : b;
     let result = 1;
@@ -14,10 +18,10 @@ const gcdGame = () => {
         break;
       }
     }
-    arr[i][1].push(`${a} ${b}`);
-    arr[i][2].push(`${result}`);
+    gameData[i].push(`${a} ${b}`);
+    gameData[i].push(`${result}`);
   }
-  return arr;
+  return gameEngine(gameData);
 };
 
 export default gcdGame;

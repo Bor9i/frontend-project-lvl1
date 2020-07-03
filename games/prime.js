@@ -1,24 +1,31 @@
+import { random, gameEngine } from '../src/index.js';
+
+const primeNumber = (number) => {
+  let answer = 'yes';
+  for (let j = 2; j < number; j += 1) {
+    if (number === 1) {
+      answer = 'no';
+      break;
+    }
+    if (number % j === 0) {
+      answer = 'no';
+      break;
+    }
+  }
+  return answer;
+};
 const primeGame = () => {
   const strQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const arr = [[[], [], []], [[], [], []], [[], [], []]];
-  for (let i = 0; i < 3; i += 1) {
-    arr[i][0].push(strQuestion);
-    const num = Math.ceil(Math.random() * 30);
-    arr[i][1].push(num);
-    let answer = 'yes';
-    for (let j = 2; j < num; j += 1) {
-      if (num === 1) {
-        answer = 'no';
-        break;
-      }
-      if (num % j === 0) {
-        answer = 'no';
-        break;
-      }
-    }
-    arr[i][2].push(answer);
+  const gameData = [];
+  const gameCounter = 3;
+  for (let i = 0; i < gameCounter; i += 1) {
+    gameData.push([]);
+    gameData[i].push(strQuestion);
+    const num = random(30);
+    gameData[i].push(num);
+    gameData[i].push(primeNumber(num));
   }
-  return arr;
+  return gameEngine(gameData);
 };
 
 export default primeGame;

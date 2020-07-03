@@ -1,25 +1,30 @@
+import { random, gameEngine } from '../src/index.js';
+
 const calcGame = () => {
   const strQuestion = 'What is the result of the expression?';
-  const arr = [[[], [], []], [[], [], []], [[], [], []]];
-  for (let i = 0; i < 3; i += 1) {
+  const gameData = [];
+  const gameCounter = 3;
+  const operations = ['*', '+', '-'];
+  for (let i = 0; i < gameCounter; i += 1) {
     let result = 0;
-    const random = Math.ceil(Math.random() * 100);
-    const a = Math.ceil(Math.random() * 10);
-    const b = Math.ceil(Math.random() * 10);
-    arr[i][0].push(strQuestion);
-    if (random < 34) {
+    const symbolChanger = random(operations.length) - 1;
+    const a = random(10);
+    const b = random(10);
+    gameData.push([]);
+    gameData[i].push(strQuestion);
+    if (symbolChanger === 0) {
       result = a * b;
-      arr[i][1].push(`${a} * ${b}`);
-    } else if (random > 33 && random < 67) {
+      gameData[i].push(`${a} ${operations[0]} ${b}`);
+    } else if (symbolChanger === 1) {
       result = a + b;
-      arr[i][1].push(`${a} + ${b}`);
-    } else if (random > 66) {
+      gameData[i].push(`${a} ${operations[1]} ${b}`);
+    } else if (symbolChanger === 2) {
       result = a - b;
-      arr[i][1].push(`${a} - ${b}`);
+      gameData[i].push(`${a} ${operations[2]} ${b}`);
     }
-    arr[i][2].push(result);
+    gameData[i].push(result);
   }
-  return arr;
+  return gameEngine(gameData);
 };
 
 export default calcGame;

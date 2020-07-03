@@ -1,18 +1,22 @@
+import { random, gameEngine } from '../src/index.js';
+
 const evenGame = () => {
   const strQuestion = 'Is this an even number? Answer "yes" or "no".';
-  const arr = [[[], [], []], [[], [], []], [[], [], []]];
-  for (let i = 0; i < 3; i += 1) {
-    const number = Math.ceil(Math.random() * 100);
+  const gameData = [];
+  const gameCounter = 3;
+  for (let i = 0; i < gameCounter; i += 1) {
+    const number = random(100);
     const num = number % 2;
-    arr[i][0].push(strQuestion);
-    arr[i][1].push(number);
+    gameData.push([]);
+    gameData[i].push(strQuestion);
+    gameData[i].push(number);
     if (num === 0) {
-      arr[i][2].push('yes');
+      gameData[i].push('yes');
     } else {
-      arr[i][2].push('no');
+      gameData[i].push('no');
     }
   }
-  return arr;
+  return gameEngine(gameData);
 };
 
 export default evenGame;
