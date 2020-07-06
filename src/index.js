@@ -5,26 +5,27 @@ export const random = (num) => {
   return number;
 };
 
-// Игровой движок.
-export const gameEngine = (anyGame) => {
+export const gameCount = 3;
+
+export const gameEngine = (anyQuestion, anyTask, anyDecision) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
-  const strHello = `Hello, ${name}!`;
-  console.log(strHello);
-  const strEndGame = `Congratulations, ${name}!`;
-  const strRight = 'Correct!';
-  for (let i = 0; i < 3; i += 1) {
-    console.log(String(anyGame[i][0]));
-    console.log(String(anyGame[i][1]));
+  const hello = `Hello, ${name}!`;
+  console.log(hello);
+  const endGame = `Congratulations, ${name}!`;
+  const rightAnswer = 'Correct!';
+  for (let i = 0; i < gameCount; i += 1) {
+    console.log(anyQuestion);
+    console.log(String(anyTask[i]));
     const inputText = readlineSync.question('Your answer: ');
-    const strWrong = `'${inputText}' is wrong answer ;(. Correct answer was '${String(anyGame[i][2])}'. Let's try again, ${name}!`;
-    if (String(anyGame[i][2]) === inputText) {
-      console.log(strRight);
+    const wrongAnswer = `'${inputText}' is wrong answer ;(. Correct answer was '${String(anyDecision[i])}'. Let's try again, ${name}!`;
+    if (String(anyDecision[i]) === inputText) {
+      console.log(rightAnswer);
     } else {
-      console.log(strWrong);
-      return strWrong;
+      console.log(wrongAnswer);
+      return wrongAnswer;
     }
   }
-  console.log(strEndGame);
-  return strEndGame;
+  console.log(endGame);
+  return endGame;
 };
