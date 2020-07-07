@@ -7,13 +7,9 @@ const evenGame = () => {
   const decision = [];
   for (let i = 0; i < gameCount; i += 1) {
     const number = random(1, 100);
-    const num = number % 2;
     task.push(number);
-    if (num === 0) {
-      decision.push('yes');
-    } else {
-      decision.push('no');
-    }
+    const parityCheck = number % 2 === 0 ? 'yes' : 'no';
+    decision.push(parityCheck);
   }
   return gameEngine(question, task, decision);
 };

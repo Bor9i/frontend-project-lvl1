@@ -8,25 +8,23 @@ const calcGame = () => {
   const operations = ['*', '+', '-'];
   for (let i = 0; i < gameCount; i += 1) {
     let result = 0;
-    const symbolChanger = random(0, operations.length) - 1;
+    const symbolChanger = random(0, operations.length - 1);
     const a = random(1, 10);
     const b = random(1, 10);
     switch (symbolChanger) {
       case 0:
         result = a * b;
-        task.push(`${a} ${operations[symbolChanger]} ${b}`);
         break;
       case 1:
         result = a + b;
-        task.push(`${a} ${operations[symbolChanger]} ${b}`);
         break;
       case 2:
         result = a - b;
-        task.push(`${a} ${operations[symbolChanger]} ${b}`);
         break;
       default:
         break;
     }
+    task.push(`${a} ${operations[symbolChanger]} ${b}`);
     decision.push(result);
   }
   return gameEngine(question, task, decision);
