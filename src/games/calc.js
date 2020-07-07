@@ -1,4 +1,5 @@
-import { random, gameEngine, gameCount } from '../index.js';
+import { gameEngine, gameCount } from '../index.js';
+import random from '../random.js';
 
 const calcGame = () => {
   const question = 'What is the result of the expression?';
@@ -7,9 +8,9 @@ const calcGame = () => {
   const operations = ['*', '+', '-'];
   for (let i = 0; i < gameCount; i += 1) {
     let result = 0;
-    const symbolChanger = random(operations.length) - 1;
-    const a = random(10);
-    const b = random(10);
+    const symbolChanger = random(0, operations.length) - 1;
+    const a = random(1, 10);
+    const b = random(1, 10);
     switch (symbolChanger) {
       case 0:
         result = a * b;

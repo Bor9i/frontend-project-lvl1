@@ -1,10 +1,5 @@
 import readlineSync from '../node_modules/readline-sync/lib/readline-sync.js';
 
-export const random = (num) => {
-  const number = Math.ceil(Math.random() * num);
-  return number;
-};
-
 export const gameCount = 3;
 
 export const gameEngine = (anyQuestion, anyTask, anyDecision) => {
