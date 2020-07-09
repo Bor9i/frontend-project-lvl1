@@ -16,16 +16,14 @@ const gcd = (firstNumber, secondNumber) => {
 
 const gcdGame = () => {
   const question = 'Find the greatest common divisor of given numbers.';
-  const task = [];
-  const decision = [];
+  const taskDecision = [];
   for (let i = 0; i < gameCount; i += 1) {
     const a = random(1, 50);
     const b = random(1, 50);
     const result = gcd(a, b);
-    task.push(`${a} ${b}`);
-    decision.push(`${result}`);
+    taskDecision.push([`${a} ${b}`, `${result}`]);
   }
-  return gameEngine(question, task, decision);
+  return gameEngine(question, taskDecision);
 };
 
 export default gcdGame;

@@ -3,15 +3,13 @@ import random from '../random.js';
 
 const evenGame = () => {
   const question = 'Is this an even number? Answer "yes" or "no".';
-  const task = [];
-  const decision = [];
+  const taskDecision = [];
   for (let i = 0; i < gameCount; i += 1) {
     const number = random(1, 100);
-    task.push(number);
     const parityCheck = number % 2 === 0 ? 'yes' : 'no';
-    decision.push(parityCheck);
+    taskDecision.push([`${number}`, `${parityCheck}`]);
   }
-  return gameEngine(question, task, decision);
+  return gameEngine(question, taskDecision);
 };
 
 export default evenGame;

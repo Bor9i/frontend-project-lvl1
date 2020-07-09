@@ -3,8 +3,7 @@ import random from '../random.js';
 
 const progressionGame = () => {
   const question = 'What number is missing in the progression?';
-  const task = [];
-  const decision = [];
+  const taskDecision = [];
   for (let i = 0; i < gameCount; i += 1) {
     const rowLength = 10;
     const index = random(0, rowLength - 1);
@@ -15,10 +14,9 @@ const progressionGame = () => {
     }
     const temp = row[index];
     row[index] = '..';
-    task.push(row.join(' '));
-    decision.push(`${temp}`);
+    taskDecision.push([`${row.join(' ')}`, `${temp}`]);
   }
-  return gameEngine(question, task, decision);
+  return gameEngine(question, taskDecision);
 };
 
 export default progressionGame;

@@ -2,25 +2,21 @@ import readlineSync from '../node_modules/readline-sync/lib/readline-sync.js';
 
 export const gameCount = 3;
 
-export const gameEngine = (anyQuestion, anyTask, anyDecision) => {
+export const gameEngine = (anyQuestion, anyTaskDecision) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
-  const hello = `Hello, ${name}!`;
-  console.log(hello);
-  const endGame = `Congratulations, ${name}!`;
-  const rightAnswer = 'Correct!';
+  console.log(`Hello, ${name}!`);
   for (let i = 0; i < gameCount; i += 1) {
     console.log(anyQuestion);
-    console.log(String(anyTask[i]));
+    console.log(anyTaskDecision[i][0]);
     const inputText = readlineSync.question('Your answer: ');
-    const wrongAnswer = `'${inputText}' is wrong answer ;(. Correct answer was '${String(anyDecision[i])}'. Let's try again, ${name}!`;
-    if (String(anyDecision[i]) === inputText) {
-      console.log(rightAnswer);
+    if (anyTaskDecision[i][1] === inputText) {
+      console.log('Correct!');
     } else {
-      console.log(wrongAnswer);
-      return wrongAnswer;
+      console.log(`"${inputText}" is wrong answer ;(. Correct answer was "${anyTaskDecision[i][1]}".\nLet's try again, ${name}!`);
+      return null;
     }
   }
-  console.log(endGame);
-  return endGame;
+  console.log(`Congratulations, ${name}!`);
+  return null;
 };
