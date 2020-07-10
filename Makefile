@@ -18,7 +18,7 @@ lint:
 	npx eslint .
 inEnv:
 	npm install eslint@7.2.0 --save-dev
-	npm install eslint-config-airbnb-base --save-dev
-	npm install eslint-plugin-import --save-dev
+	npm install eslint-config-airbnb-base@14.2.0 --save-dev
+	npm install eslint-plugin-import@2.21.2 --save-dev
 
 .PHONY:
