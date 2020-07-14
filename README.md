@@ -45,6 +45,26 @@ Brain-prime
 <a href="https://asciinema.org/a/HP0xcK1WWJwyzw4IcFyKM6FKV"><img src="https://asciinema.org/a/HP0xcK1WWJwyzw4IcFyKM6FKV.png" width="500"></a>
 <br>
 
+ABOUT
+
+brain-even
+Determine the parity of a number.
+
+brain-calc
+Define the result of an expression.
+
+brain-gcd
+Find the largest common divisor.
+
+brain-prime
+Determine whether a number is Prime.
+
+brain-progression
+Find the missing progression number.
+
+brain-games
+Runs all the games at a time.
+
 INSTALL
 
 Go to the frondend-project-lvl1 folder.
@@ -54,9 +74,9 @@ npm install -g frondend-project-lvl1
 
 RUN
 
-brain-games
 brain-even
 brain-calc
 brain-gcd
 brain-prime
 brain-progression
+brain-games
