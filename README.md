@@ -44,3 +44,19 @@ Brain-prime
 <br>
 <a href="https://asciinema.org/a/HP0xcK1WWJwyzw4IcFyKM6FKV"><img src="https://asciinema.org/a/HP0xcK1WWJwyzw4IcFyKM6FKV.png" width="500"></a>
 <br>
+
+INSTALL
+
+Go to the frondend-project-lvl1 folder.
+
+npm publish
+npm install -g frondend-project-lvl1
+
+RUN
+
+brain-games
+brain-even
+brain-calc
+brain-gcd
+brain-prime
+brain-progression
