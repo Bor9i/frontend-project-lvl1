@@ -1,31 +1,31 @@
-import { gameEngine, gameCount } from '../index.js';
+import { gameEngine, numberOfGames } from '../index.js';
 import random from '../random.js';
 
 const calcGame = () => {
-  const question = 'What is the result of the expression?';
-  const taskDecision = [];
+  const task = 'What is the result of the expression?';
+  const gameDataList = [];
   const operations = ['*', '+', '-'];
-  for (let i = 0; i < gameCount; i += 1) {
-    let result = 0;
+  for (let i = 0; i < numberOfGames; i += 1) {
+    let result;
     const operationIndex = random(0, operations.length - 1);
     const a = random(1, 10);
     const b = random(1, 10);
-    switch (operationIndex) {
-      case 0:
+    switch (operations[operationIndex]) {
+      case '*':
         result = a * b;
         break;
-      case 1:
+      case '+':
         result = a + b;
         break;
-      case 2:
+      case '-':
         result = a - b;
         break;
       default:
         break;
     }
-    taskDecision.push([`${a} ${operations[operationIndex]} ${b}`, `${result}`]);
+    gameDataList.push([`${a} ${operations[operationIndex]} ${b}`, result.toString()]);
   }
-  return gameEngine(question, taskDecision);
+  return gameEngine(task, gameDataList);
 };
 
 export default calcGame;

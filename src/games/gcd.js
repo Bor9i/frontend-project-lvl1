@@ -1,4 +1,4 @@
-import { gameEngine, gameCount } from '../index.js';
+import { gameEngine, numberOfGames } from '../index.js';
 import random from '../random.js';
 
 const gcd = (firstNumber, secondNumber) => {
@@ -15,15 +15,15 @@ const gcd = (firstNumber, secondNumber) => {
 };
 
 const gcdGame = () => {
-  const question = 'Find the greatest common divisor of given numbers.';
-  const taskDecision = [];
-  for (let i = 0; i < gameCount; i += 1) {
+  const task = 'Find the greatest common divisor of given numbers.';
+  const gameDataList = [];
+  for (let i = 0; i < numberOfGames; i += 1) {
     const a = random(1, 50);
     const b = random(1, 50);
     const result = gcd(a, b);
-    taskDecision.push([`${a} ${b}`, `${result}`]);
+    gameDataList.push([`${a} ${b}`, result.toString()]);
   }
-  return gameEngine(question, taskDecision);
+  return gameEngine(task, gameDataList);
 };
 
 export default gcdGame;
