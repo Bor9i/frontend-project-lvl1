@@ -34,7 +34,7 @@ INSTALL
 
 Go to the frondend-project-lvl1 folder.
 
-npm publish --save-dev
+npm publish --dry-run
 <br>
 npm install -g frondend-project-lvl1
 
