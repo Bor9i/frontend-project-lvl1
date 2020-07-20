@@ -4,7 +4,7 @@ Maintainability Badge
 Workflows Badge
 ![Eslint](https://github.com/AnryZZ/frontend-project-lvl1/workflows/auto-eslint/badge.svg)
 
-ABOUT
+<p>ABOUT
 
 brain-even
 Determine the parity of a number.
@@ -38,7 +38,7 @@ brain-calc
 brain-gcd
 brain-prime
 brain-progression
-brain-games
+brain-games</p>
 
 Brain-even
 
