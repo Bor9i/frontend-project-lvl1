@@ -6,6 +6,7 @@ export const gameEngine = (anyTask, anyGameDataList) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
+  let gameResult;
   for (let i = 0; i < numberOfGames; i += 1) {
     const [gameQuestion, result] = anyGameDataList[i];
     console.log(anyTask);
@@ -16,9 +17,11 @@ export const gameEngine = (anyTask, anyGameDataList) => {
     } else {
       console.log(`"${inputText}" is wrong answer ;(. Correct answer was "${result}".`);
       console.log(`Let's try again, ${name}!`);
-      return null;
+      gameResult = 'lose game';
+      break;
     }
   }
-  console.log(`Congratulations, ${name}!`);
-  return null;
+  if (gameResult !== 'lose game') {
+    console.log(`Congratulations, ${name}!`);
+  }
 };

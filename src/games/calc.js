@@ -3,7 +3,7 @@ import random from '../random.js';
 
 const calcGame = () => {
   const task = 'What is the result of the expression?';
-  const gameDataList = [];
+  const gameData = [];
   const operations = ['*', '+', '-'];
   for (let i = 0; i < numberOfGames; i += 1) {
     let result;
@@ -23,9 +23,9 @@ const calcGame = () => {
       default:
         break;
     }
-    gameDataList.push([`${a} ${operations[operationIndex]} ${b}`, result.toString()]);
+    gameData.push([`${a} ${operations[operationIndex]} ${b}`, result.toString()]);
   }
-  return gameEngine(task, gameDataList);
+  return gameEngine(task, gameData);
 };
 
 export default calcGame;

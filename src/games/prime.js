@@ -24,13 +24,13 @@ const primeNumber = (number) => {
 
 const primeGame = () => {
   const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const gameDataList = [];
+  const gameData = [];
   for (let i = 0; i < numberOfGames; i += 1) {
     const num = random(1, 30);
     const result = primeNumber(num) === true ? 'yes' : 'no';
-    gameDataList.push([num.toString(), result.toString()]);
+    gameData.push([num.toString(), result]);
   }
-  return gameEngine(question, gameDataList);
+  return gameEngine(question, gameData);
 };
 
 export default primeGame;

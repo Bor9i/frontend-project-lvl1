@@ -3,21 +3,25 @@ import random from '../random.js';
 
 const progressionGame = () => {
   const task = 'What number is missing in the progression?';
-  const gameDataList = [];
+  const gameData = [];
   for (let i = 0; i < numberOfGames; i += 1) {
     const progressionLength = 10;
     const index = random(0, progressionLength - 1);
     const step = random(3, 7);
-    const firstElement = random(1, 10);
-    const progression = [firstElement];
-    for (let j = 0; j < progressionLength - 1; j += 1) {
-      progression.push(progression[j] + step);
+    const progression = [];
+    for (let j = 0; j < progressionLength; j += 1) {
+      if (j === 0) {
+        progression.push(random(1, 10));
+      } else {
+        progression.push(progression[j - 1] + step);
+      }
     }
-    const hidenNum = progression[index];
+    const answer = progression[index];
     progression[index] = '..';
-    gameDataList.push([progression.join(' ').toString(), hidenNum.toString()]);
+    const question = progression.join(' ');
+    gameData.push([question, answer.toString()]);
   }
-  return gameEngine(task, gameDataList);
+  return gameEngine(task, gameData);
 };
 
 export default progressionGame;
