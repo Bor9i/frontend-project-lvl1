@@ -11,7 +11,8 @@ const progressionGame = () => {
     const progression = [];
     for (let j = 0; j < progressionLength; j += 1) {
       if (j === 0) {
-        progression.push(random(1, 10));
+        const firstElement = random(1, 10);
+        progression.push(firstElement);
       } else {
         progression.push(progression[j - 1] + step);
       }

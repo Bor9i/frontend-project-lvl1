@@ -21,7 +21,8 @@ const gcdGame = () => {
     const a = random(1, 50);
     const b = random(1, 50);
     const result = gcd(a, b);
-    gameData.push([`${a} ${b}`, result.toString()]);
+    const question = `${a} ${b}`;
+    gameData.push([question, result.toString()]);
   }
   return gameEngine(task, gameData);
 };

@@ -2,24 +2,18 @@ import { gameEngine, numberOfGames } from '../index.js';
 import random from '../random.js';
 
 const primeNumber = (number) => {
-  let answer;
-  if (number === 2 || number === 3) {
-    answer = true;
-    return answer;
-  }
   if (number < 2) {
-    answer = false;
-    return answer;
+    return false;
+  }
+  if (number === 2 || number === 3) {
+    return true;
   }
   for (let j = 2; j <= number / 2; j += 1) {
     if (number % j === 0) {
-      answer = false;
-      break;
-    } else {
-      answer = true;
+      return false;
     }
   }
-  return answer;
+  return true;
 };
 
 const primeGame = () => {
