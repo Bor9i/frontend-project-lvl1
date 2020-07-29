@@ -5,7 +5,9 @@ Workflows Badge
 ![Eslint](https://github.com/AnryZZ/frontend-project-lvl1/workflows/auto-eslint/badge.svg)
 
 <h3>ABOUT</h3>
-
+<br>
+<br>
+<br>
 <h4>brain-even</h4>
 Determine the parity of a number.
 
@@ -23,6 +25,8 @@ Find the missing progression number.
 
 <h4>brain-games</h4>
 Runs all the games at a time.
+<br>
+<br>
 <br>
 <h3>INSTALL</h3>
 Go to the frondend-project-lvl1 folder.
