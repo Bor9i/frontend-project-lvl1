@@ -1,7 +1,7 @@
 import { gameEngine, numberOfGames } from '../index.js';
 import random from '../random.js';
 
-const gcd = (firstNumber, secondNumber) => {
+const minMaxNum = (firstNumber, secondNumber) => {
   const max = firstNumber > secondNumber ? firstNumber : secondNumber;
   const min = firstNumber < secondNumber ? firstNumber : secondNumber;
   let result = 1;
@@ -20,7 +20,7 @@ const runGcdGame = () => {
   for (let i = 0; i < numberOfGames; i += 1) {
     const a = random(1, 50);
     const b = random(1, 50);
-    const result = gcd(a, b);
+    const result = minMaxNum(a, b);
     const question = `${a} ${b}`;
     gameData.push([question, result.toString()]);
   }
