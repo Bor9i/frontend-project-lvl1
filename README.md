@@ -5,34 +5,29 @@ Workflows Badge
 ![Eslint](https://github.com/AnryZZ/frontend-project-lvl1/workflows/auto-eslint/badge.svg)
 
 <h3>ABOUT</h3>
-<br>
-<br>
-<br>
-<h4>brain-even</h4>
+<b>brain-even</b>
 Determine the parity of a number.
 
-<h4>brain-calc</h4>
+<b>brain-calc</b>
 Define the result of an expression.
 
-<h4>brain-gcd</h4>
+<b>brain-gcd</b>
 Find the largest common divisor.
 
-<h4>brain-prime</h4>
+<b>brain-prime</b>
 Determine whether a number is Prime.
 
-<h4>brain-progression</h4>
+<b>brain-progression</b>
 Find the missing progression number.
 
-<h4>brain-games</h4>
+<b>brain-games</b>
 Runs all the games at a time.
 <br>
 <br>
 <br>
 <h3>INSTALL</h3>
 Go to the frondend-project-lvl1 folder.
-<br>
 npm publish --dry-run
-<br>
 npm install -g frondend-project-lvl1
 <br>
 <h3>RUN</h3>
