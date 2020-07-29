@@ -6,21 +6,25 @@ Workflows Badge
 
 <h3>ABOUT</h3>
 <b>brain-even</b>
+<br>
 Determine the parity of a number.
-
+<br>
 <b>brain-calc</b>
+<br>
 Define the result of an expression.
-
+<br>
 <b>brain-gcd</b>
+<br>
 Find the largest common divisor.
-
+<br>
 <b>brain-prime</b>
 Determine whether a number is Prime.
-
+<br>
 <b>brain-progression</b>
 Find the missing progression number.
-
+<br>
 <b>brain-games</b>
+<br>
 Runs all the games at a time.
 <br>
 <br>
