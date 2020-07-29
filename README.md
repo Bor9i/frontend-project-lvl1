@@ -29,8 +29,6 @@ Find the missing progression number.
 <br>
 Runs all the games at a time.
 <br>
-<br>
-<br>
 <h3>INSTALL</h3>
 Go to the frondend-project-lvl1 folder.
 <br>
