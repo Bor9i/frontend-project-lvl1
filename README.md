@@ -54,7 +54,6 @@ brain-games
 <br>
 <br>
 <h3>Brain-even</h3>
-<br>
 Install Brain-even
 <br>
 <a href="https://asciinema.org/a/5kXsowpJ2f5NtiuNcMIbU6NSo"><img src="https://asciinema.org/a/5kXsowpJ2f5NtiuNcMIbU6NSo.png" width="500"/></a> 
@@ -70,7 +69,6 @@ Losering game
 <br>
 
 <h3>Brain-calc</h3>
-<br>
 Winning game
 <br>
 <a href="https://asciinema.org/a/r8F93Yr9djx9pE7wnMXJYrrTN"><img src="https://asciinema.org/a/r8F93Yr9djx9pE7wnMXJYrrTN.png" width="500"/></a>
@@ -82,19 +80,16 @@ Losering game
 <br>
 
 <h3>Brain-gcd</h3>
-<br>
 <a href="https://asciinema.org/a/BsmiPfFCM5wacKjAMQg9dNOpA"><img src="https://asciinema.org/a/BsmiPfFCM5wacKjAMQg9dNOpA.png" width="500"/></a>
 <br>
 <br>
 
 <h3>Brain-progression</h3>
-<br>
 <a href="https://asciinema.org/a/zuu0eZr1dPBWZ923LcVR1GFEI"><img src="https://asciinema.org/a/zuu0eZr1dPBWZ923LcVR1GFEI.png" width="500"/></a>
 <br>
 <br>
 
 <h3>Brain-prime</h3>
-<br>
 <a href="https://asciinema.org/a/HP0xcK1WWJwyzw4IcFyKM6FKV"><img src="https://asciinema.org/a/HP0xcK1WWJwyzw4IcFyKM6FKV.png" width="500"></a>
 <br>
 <br>
