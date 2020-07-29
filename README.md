@@ -1,7 +1,9 @@
 Maintainability Badge
+<br>
 <a href="https://codeclimate.com/github/AnryZZ/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability"/></a>
 
 Workflows Badge
+<br>
 ![Eslint](https://github.com/AnryZZ/frontend-project-lvl1/workflows/auto-eslint/badge.svg)
 
 <h3>ABOUT</h3>
