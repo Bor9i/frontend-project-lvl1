@@ -4,42 +4,42 @@ Maintainability Badge
 Workflows Badge
 ![Eslint](https://github.com/AnryZZ/frontend-project-lvl1/workflows/auto-eslint/badge.svg)
 
-ABOUT
+<h3>ABOUT</h3>
 
-brain-even
+<h4>brain-even</h4>
 <br>
 Determine the parity of a number.
 
-brain-calc
+<h4>brain-calc</h4>
 <br>
 Define the result of an expression.
 
-brain-gcd
+<h4>brain-gcd</h4>
 <br>
 Find the largest common divisor.
 
-brain-prime
+<h4>brain-prime</h4>
 <br>
 Determine whether a number is Prime.
 
-brain-progression
+<h4>brain-progression</h4>
 <br>
 Find the missing progression number.
 
-brain-games
+<h4>brain-games</h4>
 <br>
 Runs all the games at a time.
-
-INSTALL
-
+<br>
+<h3>INSTALL</h3>
+<br>
 Go to the frondend-project-lvl1 folder.
-
+<br>
 npm publish --dry-run
 <br>
 npm install -g frondend-project-lvl1
-
-RUN
-
+<br>
+<h3>RUN</h3>
+<br>
 brain-even
 <br>
 brain-calc
@@ -54,8 +54,8 @@ brain-games
 <br>
 <br>
 <br>
-Brain-even
-
+<h3>Brain-even</h3>
+<br>
 Install Brain-even
 <br>
 <a href="https://asciinema.org/a/5kXsowpJ2f5NtiuNcMIbU6NSo"><img src="https://asciinema.org/a/5kXsowpJ2f5NtiuNcMIbU6NSo.png" width="500"/></a> 
@@ -69,8 +69,8 @@ Losering game
 <a href="https://asciinema.org/a/DymoKdGX0g8UuFeNlGnQBle7m"><img src="https://asciinema.org/a/DymoKdGX0g8UuFeNlGnQBle7m.png" width="500"/></a>
 <br>
 
-Brain-calc
-
+<h3>Brain-calc</h3>
+<br>
 Winning game
 <br>
 <a href="https://asciinema.org/a/r8F93Yr9djx9pE7wnMXJYrrTN"><img src="https://asciinema.org/a/r8F93Yr9djx9pE7wnMXJYrrTN.png" width="500"/></a>
@@ -80,17 +80,17 @@ Losering game
 <a href="https://asciinema.org/a/Dupxg3XxNw6CrORlKf6rdAMdQ"><img src="https://asciinema.org/a/Dupxg3XxNw6CrORlKf6rdAMdQ.png" width="500"/></a>
 <br>
 
-Brain-gcd
+<h3>Brain-gcd</h3>
 <br>
 <a href="https://asciinema.org/a/BsmiPfFCM5wacKjAMQg9dNOpA"><img src="https://asciinema.org/a/BsmiPfFCM5wacKjAMQg9dNOpA.png" width="500"/></a>
 <br>
 
-Brain-progression
+<h3>Brain-progression</h3>
 <br>
 <a href="https://asciinema.org/a/zuu0eZr1dPBWZ923LcVR1GFEI"><img src="https://asciinema.org/a/zuu0eZr1dPBWZ923LcVR1GFEI.png" width="500"/></a>
 <br>
 
-Brain-prime
+<h3>Brain-prime</h3>
 <br>
 <a href="https://asciinema.org/a/HP0xcK1WWJwyzw4IcFyKM6FKV"><img src="https://asciinema.org/a/HP0xcK1WWJwyzw4IcFyKM6FKV.png" width="500"></a>
 <br>

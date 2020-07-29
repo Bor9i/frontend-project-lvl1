@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-import calcGame from '../src/games/calc.js';
-import evenGame from '../src/games/even.js';
-import gcdGame from '../src/games/gcd.js';
-import primeGame from '../src/games/prime.js';
-import progressionGame from '../src/games/progression.js';
+import runCalcGame from '../src/games/calc.js';
+import runEvenGame from '../src/games/even.js';
+import runGcdGame from '../src/games/gcd.js';
+import runPrimeGame from '../src/games/prime.js';
+import runProgressionGame from '../src/games/progression.js';
 
-calcGame();
-evenGame();
-gcdGame();
-primeGame();
-progressionGame();
+runCalcGame();
+runEvenGame();
+runGcdGame();
+runPrimeGame();
+runProgressionGame();

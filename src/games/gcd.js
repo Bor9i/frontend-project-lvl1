@@ -14,7 +14,7 @@ const gcd = (firstNumber, secondNumber) => {
   return result;
 };
 
-const gcdGame = () => {
+const runGcdGame = () => {
   const task = 'Find the greatest common divisor of given numbers.';
   const gameData = [];
   for (let i = 0; i < numberOfGames; i += 1) {
@@ -27,4 +27,4 @@ const gcdGame = () => {
   return gameEngine(task, gameData);
 };
 
-export default gcdGame;
+export default runGcdGame;

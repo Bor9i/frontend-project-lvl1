@@ -1,7 +1,7 @@
 import { gameEngine, numberOfGames } from '../index.js';
 import random from '../random.js';
 
-const calcGame = () => {
+const runCalcGame = () => {
   const task = 'What is the result of the expression?';
   const gameData = [];
   const operations = ['*', '+', '-'];
@@ -10,7 +10,8 @@ const calcGame = () => {
     const operationIndex = random(0, operations.length - 1);
     const a = random(1, 10);
     const b = random(1, 10);
-    switch (operations[operationIndex]) {
+    const operation = operations[operationIndex];
+    switch (operation) {
       case '*':
         result = a * b;
         break;
@@ -23,9 +24,10 @@ const calcGame = () => {
       default:
         break;
     }
-    gameData.push([`${a} ${operations[operationIndex]} ${b}`, result.toString()]);
+    const question = `${a} ${operation} ${b}`;
+    gameData.push([question, result.toString()]);
   }
   return gameEngine(task, gameData);
 };
 
-export default calcGame;
+export default runCalcGame;
