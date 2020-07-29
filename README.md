@@ -7,31 +7,24 @@ Workflows Badge
 <h3>ABOUT</h3>
 
 <h4>brain-even</h4>
-<br>
 Determine the parity of a number.
 
 <h4>brain-calc</h4>
-<br>
 Define the result of an expression.
 
 <h4>brain-gcd</h4>
-<br>
 Find the largest common divisor.
 
 <h4>brain-prime</h4>
-<br>
 Determine whether a number is Prime.
 
 <h4>brain-progression</h4>
-<br>
 Find the missing progression number.
 
 <h4>brain-games</h4>
-<br>
 Runs all the games at a time.
 <br>
 <h3>INSTALL</h3>
-<br>
 Go to the frondend-project-lvl1 folder.
 <br>
 npm publish --dry-run
@@ -39,7 +32,6 @@ npm publish --dry-run
 npm install -g frondend-project-lvl1
 <br>
 <h3>RUN</h3>
-<br>
 brain-even
 <br>
 brain-calc
