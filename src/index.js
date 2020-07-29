@@ -15,8 +15,9 @@ export const gameEngine = (anyTask, anyGameDataList) => {
       console.log('Correct!');
     } else {
       console.log(`"${inputText}" is wrong answer ;(. Correct answer was "${result}".`);
-      return console.log(`Let's try again, ${name}!`);
+      console.log(`Let's try again, ${name}!`);
+      return;
     }
   }
-  return console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };

@@ -9,13 +9,10 @@ const progressionGame = () => {
     const index = random(0, progressionLength - 1);
     const step = random(3, 7);
     const progression = [];
-    for (let j = 0; j < progressionLength; j += 1) {
-      if (j === 0) {
-        const firstElement = random(1, 10);
-        progression.push(firstElement);
-      } else {
-        progression.push(progression[j - 1] + step);
-      }
+    const firstElement = random(1, 10);
+    progression.push(firstElement);
+    for (let j = 0; j < progressionLength - 1; j += 1) {
+      progression.push(progression[j - 1] + step);
     }
     const answer = progression[index];
     progression[index] = '..';
