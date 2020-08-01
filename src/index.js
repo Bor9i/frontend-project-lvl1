@@ -6,9 +6,9 @@ export const gameEngine = (task, gameData) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
+  console.log(task);
   for (let i = 0; i < numberOfGames; i += 1) {
     const [gameQuestion, result] = gameData[i];
-    console.log(task);
     console.log(gameQuestion);
     const inputText = readlineSync.question('Your answer: ');
     if (result === inputText) {
